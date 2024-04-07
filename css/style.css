@@ -100,6 +100,7 @@ h1 {
     width: 60px;
     position: relative;
     top: 3px;
+    z-index: 2;
 }
 
 .location-logo img {
@@ -114,6 +115,10 @@ h1 {
     right: 5px;
 }
 
+.search-input::placeholder {
+    color: #000;
+}
+
 .search-input:focus {
     outline: none;
 }
@@ -125,6 +130,7 @@ h1 {
     position: relative;
     right: 9px;
     cursor: pointer;
+    
 }
 
 .search-button p {
@@ -238,8 +244,13 @@ h1 {
 }
 
 .hebergements .card-content {
-    line-height: 1.5rem;
+    line-height: 0.9rem;
     margin-left: 0.7rem;
+    margin-top: 0.4rem;
+}
+
+.hebergements-cards .card-txt {
+    line-height: 1.7rem;
 }
 
 .hebergements h4 {
@@ -398,6 +409,20 @@ footer a, footer p {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    .logo-booki {
+        height: 1.3rem;
+    }
+
+    .location-logo{
+        top: 0;
+    }
+
+    .search-button {
+        position: relative;
+        right: 16px;
+        top: 1px;
+    }
+
     .activites-section .card {
         height: 270px;
         padding: 0;
@@ -445,8 +470,12 @@ footer a, footer p {
 @media (max-width: 767.98px) {
 
     .main-container {
-        padding: 0 1rem;
+        padding: 0;
         
+    }
+
+    .logo-booki {
+        height: 1.7rem;
     }
 
     header {
@@ -484,6 +513,10 @@ footer a, footer p {
 
     /* Navbar */
 
+    nav, .activites {
+        padding: 0 1rem;
+    }
+
     .search-logo {
         display: flex;
         margin: 0 1rem;
@@ -501,9 +534,10 @@ footer a, footer p {
         width: 100%;
     }
 
+    
+
     .search-button {
-        position: relative;
-        top: 4px;
+        border-radius: 15px;
     }
 
     .search-button p {
@@ -544,6 +578,12 @@ footer a, footer p {
         flex-direction: column-reverse;
     }
 
+    .hebergements-and-populaires section {
+        border-radius: 0%;
+        background-color: white;
+        padding: 2rem 1rem;
+    }
+
     /** populaires **/
 
     .populaires-cards {
@@ -553,6 +593,10 @@ footer a, footer p {
 
     .populaires-cards a {
         width: 100%;
+    }
+
+    .populaires {
+        background-color: #F2F2F2 !important;
     }
 
 
