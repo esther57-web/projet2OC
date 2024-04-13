@@ -133,7 +133,7 @@ h1 {
     
 }
 
-.search-button p {
+.search-button span {
     font-weight: 700;
     color: #FFFFFF;
     text-align: center;
@@ -160,7 +160,7 @@ h1 {
     gap: 10px;
 }
 
-.filter-category p {
+.filter-category span {
     text-transform: capitalize;
     font-weight: 700;
     margin-right: 1rem;
@@ -200,7 +200,7 @@ h1 {
     display: flex;
     gap: 1rem;
     align-items: center;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .info-bar img {
@@ -427,6 +427,10 @@ footer a, footer p {
         top: 1px;
     }
 
+    .activites {
+        margin: 48px 30px 0 30px;
+    }
+
     .activites-section .card {
         height: 270px;
         padding: 0;
@@ -527,7 +531,7 @@ footer a, footer p {
 
     /* Navbar */
 
-    nav, .activites {
+    nav {
         padding: 0 1rem;
     }
 
@@ -554,7 +558,7 @@ footer a, footer p {
         border-radius: 15px;
     }
 
-    .search-button p {
+    .search-button span {
         display: none;
     }
 
@@ -633,6 +637,12 @@ footer a, footer p {
     .activites {
         position: relative;
         top: 4rem;
+        margin: 48px 35px 0 35px;
+    }
+    
+    .activites-section .card {
+        height: 200px;
+        padding: 0;
     }
 
     .activites-section {
@@ -644,7 +654,7 @@ footer a, footer p {
     }
 
     .activites h3 {
-        margin-top: 0.6rem;
+        margin-top: 0.4rem;
     }
 
     /** footer **/
