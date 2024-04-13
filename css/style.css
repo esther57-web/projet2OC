@@ -45,7 +45,7 @@ header {
     margin: 0;
 }
 
-.hebergements-menu {
+.hebergements-menu:hover, .activites-menu:hover {
     color: #0065FC;
     border-top: solid 2px #0065FC;
 }
@@ -375,11 +375,11 @@ h1 {
 .activites-section img {
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 80%;
+    height: 87%;
 }
 
 .activites h3 {
-    margin: 1rem 0 0 1rem;
+    margin: 0.5rem 1rem 0 1rem;
     font-size: 1rem;
 }
 
@@ -409,6 +409,10 @@ footer a, footer p {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    .menu {
+        gap: 48px;
+    }
+
     .logo-booki {
         height: 1.3rem;
     }
@@ -428,8 +432,12 @@ footer a, footer p {
         padding: 0;
     }
 
+    .activites-section img {
+        height: 80%;
+    }
+
     .activites h3 {
-        margin: 0.5rem 0 0 0.5rem;
+        margin: 0.4rem 1rem 0 1rem;
         font-size: 1rem;
         font-size: 14px;
     }
@@ -505,9 +513,15 @@ footer a, footer p {
 
     }
 
-    .hebergements-menu {
-        color: #0065FC;
+    .hebergements-menu, .activites-menu {
+        
         border-top: none;
+        border-bottom: solid 2px #F2F2F2;
+    }
+
+    .hebergements-menu:hover, .activites-menu:hover {
+        border-top: none;
+        color: #0065FC;
         border-bottom: solid 2px #0065FC;
     }
 
@@ -627,6 +641,10 @@ footer a, footer p {
 
     .activites a {
         width: 100%;
+    }
+
+    .activites h3 {
+        margin-top: 0.6rem;
     }
 
     /** footer **/
