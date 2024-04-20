@@ -22,6 +22,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -431,6 +432,10 @@ footer a, footer p {
         margin: 48px 30px 0 30px;
     }
 
+    .activites-section {
+        gap: 1rem;
+    }
+
     .activites-section .card {
         height: 270px;
         padding: 0;
@@ -508,6 +513,8 @@ footer a, footer p {
 
     .menu a {
         width: 50%;
+        display: flex;
+        justify-content: center;
     }
 
     .menu li {
@@ -630,6 +637,10 @@ footer a, footer p {
 
     .hebergements a {
         width: 100%;
+    }
+
+    .second-row {
+        margin-top: 1rem !important;
     }
 
     /** activites **/
