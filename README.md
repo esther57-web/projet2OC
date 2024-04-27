@@ -13,7 +13,7 @@ Ma mission principale était d'intégrer l'interface responsive de leur site.
 
 # Technologies utilisées
 
-HTML 5
+HTML 5<br>
 CSS 3
 
 # Dépôt distant
